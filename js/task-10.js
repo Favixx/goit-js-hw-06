@@ -24,4 +24,3 @@ sizes = 30;
 }
 createButton.addEventListener("click", creatingHandler)
 destroyButton.addEventListener("click", destroyingHandler)
-console.dir(boxesDiv)
