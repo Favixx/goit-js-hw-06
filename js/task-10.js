@@ -19,8 +19,9 @@ function creatingHandler(){
   }
 }
 function destroyingHandler(){
-boxesDiv.innerHTML = ""
-sizes = 30;
+while (boxesDiv.firstChild){
+  boxesDiv.remove(boxesDiv.firstChild)
+}
 }
 createButton.addEventListener("click", creatingHandler)
 destroyButton.addEventListener("click", destroyingHandler)
